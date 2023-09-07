@@ -1,0 +1,28 @@
+
+{% extends 'bootstrap/base.html' %}
+
+{% import "bootstrap/wtf.html" as wtf %}
+{% block styles %}
+{{super()}}
+<link rel="stylesheet"
+      href="{{url_for('.static', filename='css/stylus.css')}}">
+{% endblock %}
+{% block title %}Register{% endblock %}
+
+{% block content %}
+
+<div class="form-body">
+    <div class="row">
+        <div class="form-holder">
+            <div class="form-content">
+                <div class="form-items">
+                    <!-- <h3>Register</h3> -->
+                    <!-- <p>Fill in the data below.</p> -->
+                    {{ wtf.quick_form(form, novalidate=True) }} <br>
+                    <!-- <p class="space-above" ><a href="{{ url_for('cafes') }}">See all cafes</a></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

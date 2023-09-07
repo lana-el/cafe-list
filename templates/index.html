@@ -1,0 +1,31 @@
+{% include "navbar.html" %}
+<br>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Cafes Homepage</title>
+        <!-- Favicon
+        <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" /> -->
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="static/css/styles.css" rel="stylesheet" />
+    </head>
+
+  <body class="bg-dark py-5">
+    <div class="jumbotron text-center">
+        <div class="container text-white" ">
+          <h1 class="display-4 fw-bolder" >☕️ Coffee & Wifi 💻</h1>
+          <p class="lead">Want to work in a cafe but need power and wifi?</p>
+          <hr class="my-4">
+          <p>You've found the right place! Checkout my collection of cafes with data on power socket availability, wifi speed and coffee quality.</p>
+          <a class="btn btn-light" href="{{ url_for('cafes') }}" role="button">Show Me!</a>
+        </div>
+    </div>
+  </body>
+</html>
+
